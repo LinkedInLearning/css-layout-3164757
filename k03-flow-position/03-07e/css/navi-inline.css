@@ -18,6 +18,11 @@
     
 /* Navigationsbereich gestalten */
 .site-nav { 
+  /* Navigation am oberen Rand des Viewports fixieren */
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 6px var(--color-shadow);
+
   background-color: var(--grey-very-dark);
   color: white; 
   padding: 0.5rem 1rem;

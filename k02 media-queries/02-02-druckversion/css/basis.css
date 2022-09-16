@@ -27,10 +27,10 @@ html {
   --color-accent: #f63; 
   --color-accent-active: #ec3; 
 
-  --color-gray-very-light: whitesmoke; 
-  --color-gray-light: #eee; 
-  --color-gray-dark: #666; 
-  --color-gray-very-dark: #333; 
+  --grey-very-light: whitesmoke; 
+  --grey-light: #eee; 
+  --grey-dark: #666; 
+  --grey-very-dark: #333; 
   
   --color-shadow: rgb(51,51,51,0.3); /* #333 transparent */
 

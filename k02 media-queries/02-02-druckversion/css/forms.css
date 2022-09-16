@@ -18,7 +18,7 @@
 
 /* Abschnitt gestalten */
 .kontaktdaten {
-  background: var(--color-gray-very-light, whitesmoke);
+  background: var(--grey-very-light, whitesmoke);
   color: var(--color-base-dark, black); 
 
   padding: 1rem;
@@ -63,7 +63,7 @@
   padding: 0.5rem;
   
   /* Rahmenlinien der Eingabefelder */
-  border: 1px solid var(--color-gray-very-dark, #333);
+  border: 1px solid var(--grey-very-dark, #333);
   border-radius: 0.25rem;
 }
 
@@ -71,7 +71,7 @@
 .kontaktformular input[type="text"]:focus, 
 .kontaktformular input[type="email"]:focus, 
 .kontaktformular textarea:focus {
-  background-color: var(--color-gray-very-light, whitesmoke);
+  background-color: var(--grey-very-light, whitesmoke);
   color: var(--color-base-dark, black); 
 }
 

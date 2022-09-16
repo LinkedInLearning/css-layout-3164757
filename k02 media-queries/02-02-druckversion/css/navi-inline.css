@@ -18,7 +18,7 @@
     
 /* Navigationsbereich gestalten */
 .site-nav { 
-  background-color: var(--color-gray-very-dark);
+  background-color: var(--grey-very-dark);
   color: white; 
   padding: 0.5rem 1rem;
   margin-bottom: 2rem; 

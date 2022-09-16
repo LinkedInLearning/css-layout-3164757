@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Abbildungen beschriften - Videokurs Webtechniken lernen 3: CSS-Layout</title>
+    
+    <style>
+      
+      /* Basisgestaltung */ 
+      * { box-sizing: border-box; }
+
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;        
+        max-width: 780px; 
+        padding: 1rem; 
+        margin: auto; 
+      }
+
+      figure {
+        max-width: 400px;
+        margin: auto; 
+      }
+      
+      /* CSS zur Bildbeschriftung ergänzen bzw. einfügen */ 
+      
+      figure img {
+        max-width: 100%; 
+        height: auto; 
+        box-shadow: 0 3px 19px 0 rgb(51, 51, 51, 0.4); 
+      }
+      
+  
+    </style>
+  
+  </head>
+
+  <body>
+       
+<figure>
+
+  <img src="bilder/hamburg-blankenese-treppenviertel-400.jpg" 
+       srcset="bilder/hamburg-blankenese-treppenviertel-800.jpg 2x"
+       alt="Blick auf das Treppenviertel in Blankenese" 
+       width="400" 
+       height="300">
+
+  <figcaption>Blick auf das Treppenviertel in Blankenese</figcaption>
+
+</figure>            
+    
+  </body>
+</html>
+
+
+
+
+
+

@@ -21,7 +21,7 @@
   */ 
 
 /* Hintergrundfarbe für das Stammelement */ 
-html { background-color: var(--color-gray-very-light, whitesmoke); }
+html { background-color: var(--grey-very-light, whitesmoke); }
 
 /* Grundlegende Gestaltung für body */
 body {
@@ -69,7 +69,7 @@ body {
 /* Grundlegende Gestaltung für den Footer */ 
 .site-footer {
     font-size: smaller; 
-    background-color: var(--color-gray-very-dark, #333);
+    background-color: var(--grey-very-dark, #333);
     color: var(--color-base-light, white); 
     text-align: right; 
     padding: 0.5rem 1rem;
