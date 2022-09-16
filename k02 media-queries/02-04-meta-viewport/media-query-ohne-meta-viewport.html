@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Media Queries – Videokurs Webtechniken lernen 3: CSS-Layout</title>
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+
+      body { 
+        background: white; 
+        color: black; 
+        font-family: sans-serif; 
+        line-height: 1.5; 
+        padding: 1rem; 
+      } 
+
+      /**
+      Weitere Beispiele: 
+      (max-width: 600px)
+      (min-width: 320px) and (max: width 767px)
+      */
+      @media screen and (min-width: 600px) {
+
+        body { 
+          background-color: steelblue; 
+          color: white; 
+        }
+      
+      }
+
+      /* Mehrere Media Queries kombinieren */
+      /* 
+      @media screen and (min-width: 980px) {
+
+        body { 
+          background-color: darkblue; 
+          color: white; 
+        }
+
+      }  
+      */
+  
+    </style>
+    
+
+  </head>
+
+  <body>
+    
+    <h1>Media Queries</h1>
+
+    <p>Hintergrund- und Schriftfarbe verändern sich abhängig von der Viewportbreite.</p>
+
+  </body>
+
+</html>
