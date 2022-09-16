@@ -1,47 +1,47 @@
-# [DE-Kursname hier eintragen]
+# Webtechniken lernen 3: CSS-Layout 
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs `[COURSENAME]`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs `Webtechniken lernen 3: CSS-Layout `. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
 ![COURSENAME][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
 
 [COURSEDESCRIPTION]
 
-## Anleitung
+## Die Übungsdateien 
+Die Übungsdateien bestehen aus insgesamt XX Ordnern: 
 
-Dieses Repository hat Branches für jedes Video im Kurs. Verwenden Sie das Ausklappmenü "Branch: ..." in GitHub um zwischen den unterschiedlichen Branches hin und her zu wechseln bzw. um bei einem spezifischen Status einzusteigen. Oder Sie fügen `/tree/BRANCH_NAME` der URL hinzu um direkt in den gewünschten Branch zu wechseln.
+- Die Ordner `k01` bis `kXX` repräsentieren die X Kapitel des Kurses. In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten. 
+- Der Ordner `lagerhalle` enthält die im Kurs verwendeten Grafiken. 
+- Der Ordner `lesezeichen` enthält eine HTML-Datei mit anklickbaren Lesezeichen für die im Kurs gezeigten Webseiten. 
 
-## Branches
 
-Die Git Branches sind passend zu den Videos im Kurs strukturiert. Die Namenskonvention lautet `Kapitel#_Video#`. Der Branch `02_03` beinhaltet zum Beispiel die Übungen für das dritte Video im zweiten Kapitel. 
-Einige Branches haben einen Anfangsstatus (`b`) für "beginning" und einen Endstatus (`e`). Der Branch mit dem `e` am Ende beinhaltet in diesem Fall stets den Code der am Ende des Videos zu sehen ist. Der `master` Branch beinhaltet den initialen Quellcode und wird nicht für die Übungen innerhalb des Kurses genutzt.
+## Viele Filme haben einen Anfangs- und einen Ende-Ordner 
+Die Kapitelordner haben Unterordner, die nach dem Schema `kapitelnummer_filmnummer` mit den Filmen korrespondieren. So enthält der Unterordner `01_04` die Übungsdateien für den vierten Film im ersten Kapitel.
 
-Wenn Sie von einem Branch nach Änderungen zum nächsten Branch wechseln, erhalten Sie möglicherweise die folgende Meldung:
+Für viele Filme gibt es zwei Ordner: 
 
-```
-error: Your local changes to the following files would be overwritten by checkout:        [files]
-Please commit your changes or stash them before you switch branches.
-Aborting
-```
+- einen Anfangs-Ordner, z. B. `01_04a`
+- einen Ende-Ordner, z. B. `01_04e` 
 
-Dieses Problem lösen Sie wie folgt:
-    Add changes to git using this command: git add .
-    Commit changes using this command: git commit -m "some message"
+Der Ordner `01_04a` enthält also die Übungsdateien wie sie am Anfang des Films benötigt werden, der Ordner `01_04e` zeigt die Übungsdateien wie sie am Ende des Films sein sollten. 
 
-## Installation
 
-1. Um diese Übungsdateien nutzen zu können, müssen Sie folgendes installiert haben:
-   - [list of requirements for course]
-2. Klonen Sie das Repository in Ihre lokale Maschine unter Verwendung von terminal (Mac), CMD (Windows) oder ein anderes Werkzeug mit grafischer Bedienoberfläche wie SourceTree.
-3. [Course-specific instructions]
+## Installation 
+1. Laden Sie die Übungsdateien als ZIP-Datei auf Ihren Computer herunter:   
+    - Klicken Sie auf die grüne Schaltfläche `Code`.
+    - Wählen Sie den Befehl `Download ZIP`. 
+2. Entpacken Sie die ZIP-Datei auf Ihrem Computer. 
+3. Kopieren Sie die Übungsdateien aus dem gewünschten Unterordner in einen Übungsordner. 
 
-### Autor
+Um die Übungsdateien auf Ihrem Computer sinnvoll nutzen zu können benötigen Sie einen Editor wie z. B. Visual Studio Code und einen oder mehrere Browser. 
 
-**[Name hier eintragen]**
+Viel Spaß mit dem Kurs und den Übungsdateien! 
 
-_[Berufsbezeichnung hier eintragen]_
+## Autor
+**Peter Müller**
 
-Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors) an.
+[Website zum Kurs](https://html-und-css.de/)
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg
+Sehen Sie sich andere Kurse des Autors auf <<<<Link aktualisieren>>>> [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors?u=104) an.
+
+[lil-course-url]: https://www.linkedin.com/learning/
+[lil-thumbnail-url]: https://
