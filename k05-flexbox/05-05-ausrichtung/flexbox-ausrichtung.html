@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flexbox - Navigation – Einführung in HTML + CSS</title>
+    <meta name="description" content="In diesem Videokurs lernen Sie das Erstellen und Gestalten von Webseiten mit HTML und CSS.">
+
+    <style>
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: sans-serif;
+        background-color: white; 
+        color: black; 
+        max-width: 600px; 
+        margin: 1rem auto;         
+      }      
+      
+      /* Die Navigation */
+      ul { 
+        background: gainsboro; 
+        list-style: none;
+        padding: 0; 
+        margin: 0; 
+      }
+      
+      a {
+        display: block; 
+        text-decoration: none; 
+        background: #333; 
+        color: white; 
+        min-height: 100%; 
+        padding: 0.5rem 1rem;   
+      }
+
+      a:hover, a:focus {
+        background: #f63;
+        color: white; 
+      }      
+
+      a:active {
+        background: #ec3;
+        color: black; 
+      }
+      
+      .current a { 
+        background: #07b; 
+        color: white; 
+      }
+      
+      /* CSS für Flexbox  */ 
+      ul {
+        display: flex;
+
+        /* 1. Flex-Items an der Hauptachse ausrichten mit justify-content  */
+        /* justify-content: flex-start;  */
+        /* justify-content: center;  */
+        /* justify-content: flex-end;  */
+        /* justify-content: space-between;          */
+        /* justify-content: space-around;  */
+        /* justify-content: space-evenly;  */
+
+        /* 2. Flex-Items an der Querachse ausrichten mit align-items  */
+        /* min-height: 5rem;  */
+        /* align-items: flex-start;  */
+        /* align-items: center;  */
+        /* align-items: flex-end;  */
+        /* align-items: stretch;  */
+
+        /* 3. Querachse und align-items von links nach rechts */
+        /* flex-flow: column;  */
+      } 
+
+      /* 4. Einzelne Flex-Items ausrichten mit align-self */
+      /* ul li:nth-child(3) { align-self: flex-end; } */
+
+    </style>
+    
+  </head>
+
+  <body>
+    
+    <nav>
+
+        <ul>
+          <li class="current"><a href="#">Startseite</a></li>	
+          <li><a href="#">News</a></li>	
+          <li><a href="#">Über&nbsp;uns</a></li>	
+          <li><a href="#">Kontakt</a></li>	
+        </ul>	
+
+    </nav>
+
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flexbox - Navigation – Einführung in HTML + CSS</title>
+    <meta name="description" content="In diesem Videokurs lernen Sie das Erstellen und Gestalten von Webseiten mit HTML und CSS.">
+
+    <style>
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: sans-serif;
+        background-color: white; 
+        color: black; 
+        max-width: 600px; 
+        margin: 1rem auto;         
+      }      
+      
+      /* Die Navigation */
+      ul { 
+        background: gainsboro; 
+        list-style: none;
+        padding: 0; 
+        margin: 0; 
+      }
+      
+      a {
+        display: block; 
+        text-decoration: none; 
+        background: #333; 
+        color: white; 
+        min-height: 100%; 
+        padding: 0.5rem 1rem;   
+      }
+
+      a:hover, a:focus {
+        background: #f63;
+        color: white; 
+      }      
+
+      a:active {
+        background: #ec3;
+        color: black; 
+      }
+      
+      .current a { 
+        background: #07b; 
+        color: white; 
+      }
+      
+      /* CSS für Flexbox  */ 
+      ul { display: flex; } 
+
+      /* Automatische Abstände für Flex-Items mit margin: auto  */
+      /* ul > li:last-child { margin-left: auto; } */
+
+    </style>
+    
+  </head>
+
+  <body>
+    
+    <nav>
+
+        <ul>
+          <li class="current"><a href="#">Startseite</a></li>	
+          <li><a href="#">News</a></li>	
+          <li><a href="#">Über&nbsp;uns</a></li>	
+          <li><a href="#">Kontakt</a></li>	
+        </ul>	
+
+    </nav>
+
+  </body>
+</html>
