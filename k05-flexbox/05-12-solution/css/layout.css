@@ -86,17 +86,40 @@ body {
 
 /* Die Navigation im Fußbereich */   
 .footer-nav ul {
+  display: flex;
+  list-style: none; 
+
+  padding: 0; 
   margin: 0; 
 }
+
 .footer-nav li {
-  display: inline;
   margin-right: 0.5rem;
 }
+
+.footer-nav li:first-child {
+  padding-right: 0.5rem; 
+  border-right: 1px solid var(--grey-light); 
+}
+
+.footer-nav li:last-child {
+  margin-right: 0; 
+  margin-left: auto; 
+}
+
 .site-footer a {
   color: var(--color-base-light, white); 
   text-decoration: none; 
 }
 
+.site-footer a:hover, 
+.site-footer a:focus {
+  text-decoration: underline; 
+}
+
+.site-footer a:active {
+  color: var(--color-accent-active); 
+}
 
 /** 
   * Ende layout.css 

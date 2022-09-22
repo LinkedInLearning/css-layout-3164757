@@ -67,7 +67,7 @@ body {
   margin-bottom: 2rem; 
 
   /* Sticky Footer, Schritt 2/2 */
-  flex: 1; 
+  /* flex: 1;  */
 } 
  
 
@@ -81,7 +81,7 @@ body {
   background-color: var(--grey-very-dark, #333);
   color: var(--color-base-light, white); 
   text-align: right; 
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Die Navigation im Fußbereich */   
