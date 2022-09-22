@@ -31,7 +31,7 @@ body {
     max-width: 600px; 
   
     /* Horizontal zentrieren */ 
-    margin: 0.25rem auto;   
+    margin: 0 auto;   
   }
 
 

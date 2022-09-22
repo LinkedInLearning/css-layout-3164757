@@ -18,6 +18,9 @@ basis.css
 Bug aus Übungsdateien V1.0 behoben (Semikolon statt Komma): 
 img, video { max-width: 100%; height: auto; } 
 
+layout.css 
+body hat margin: 0 auto (statt 0.25rem auto)
+
 navi-inline.css 
 Unterstreichung der Links für .current a, .site-nav a:hover und .site-nav:focus 
 

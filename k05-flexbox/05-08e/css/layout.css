@@ -29,9 +29,16 @@ body {
     background-color: var(--color-base-light, white); 
     min-width: 320px; 
     max-width: 600px; 
-  
+
     /* Horizontal zentrieren */ 
     margin: 0 auto;   
+
+/* Sticky Footer 1/2 */
+display: flex;
+flex-flow: column; 
+min-height: 100vh;    
+margin: 0 auto; 
+
   }
 
 
@@ -59,6 +66,9 @@ body {
     line-height: 1.5; 
     padding: 0 1rem; 
     margin-bottom: 2rem; 
+
+/* Sticky Footer 2/2 */
+flex: 1; 
 } 
  
 
