@@ -1,0 +1,138 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    navi-responsiv.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Site-Navigation
+    - basiert auf display: flex
+    - Gestaltung nach dem Prinzip Mobile First: 
+      1. Gestaltung für die mobile Navigation  
+      2. Menübutton per CSS gestalten 
+      3. Menübutton per CSS ausblenden 
+      4. Navigationsliste mit dem Menübutton einblenden
+
+    ======================================= */
+
+
+/** 
+  * 1. Gestaltung für die mobile Navigation  
+  */     
+    
+/* Navigationsbereich gestalten */
+.site-nav { 
+  background-color: var(--grey-very-dark);
+  color: white; 
+
+  box-shadow: 0 2px 6px var(--color-shadow);
+  margin-bottom: 2rem; 
+}
+
+.site-nav .inside {
+  padding: 0; 
+}
+
+/* Navigationsliste als Flex-Container */
+.site-nav ul { 
+  display: flex;
+  flex-flow: column; 
+  list-style: none;  
+  
+  padding: 0; 
+  margin: 0; 
+}
+
+/* Die Listenelemente li benötigen in der mobilen Navigation kein CSS ;-) */
+
+/* Navigationslinks gestalten */
+.site-nav a {
+  display: block;
+  background: var(--grey-very-dark);
+  color: white; 
+  text-decoration: none; 
+  padding: 0.5rem 1rem; 
+}
+
+/* Hover und Focus gestalten */
+.site-nav a:hover, .site-nav a:focus {
+  background: var(--color-primary); 
+  color: var(--color-base-light); 
+}
+
+/* Im Moment der Aktivierung */
+.site-nav a:active {
+  background: var(--color-accent); 
+  color: var(--color-base-light); 
+}
+
+/* Aktuellen Menüpunkt und :hover/:focus unterstreichen */
+.current a { 
+  background: var(--color-primary); 
+  color: white; 
+  text-decoration: underline; 
+}
+
+
+
+/** 
+  * 2. Menübutton per CSS gestalten 
+  */     
+
+/* Keine JavaScript? Menübutton ausblenden */
+.no-js .menubutton { display: none; }
+
+/* Menübutton gestalten */
+.js .menubutton {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  background: inherit;
+  color: var(--color-base-light); 
+  font: inherit; 
+  text-align: center; 
+  padding: 0.5rem 1rem; 
+  border: 0; 
+  margin: 0; 
+}
+
+.js .menubutton::before {
+  content: url("../bilder/menuburger.svg"); 
+  width: 1rem; 
+  height: 1rem; 
+  margin: 0.25rem; 
+}
+
+
+/**
+  * 3. Menübutton per CSS ausblenden 
+  */
+
+.js .site-nav ul {
+  max-height: 0; 
+  overflow: hidden; 
+}
+
+
+/**
+  * 4. Navigationsliste mit dem Menübutton einblenden 
+  */
+
+/* Navigationsliste mit leichter Animation einblenden  */
+.js .showmenu + ul {
+  max-height: 100rem; 
+  transition: max-height 0.5s ease;
+  overflow: auto; 
+}
+
+/* Tausche Hamburger gegen X */
+.js .showmenu.menubutton::before {
+  content: url("../bilder/menuclose.svg");
+}
+
+
+
+/** 
+  * Ende navi-responsiv.css 
+  */ 

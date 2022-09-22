@@ -1,0 +1,32 @@
+/** ====================================================
+    Einstieg in HTML und CSS 
+    Stylesheet für die Übungswebsite    
+
+    style.css 
+    - zentrales Stylesheet zum Importieren der Module 
+    - wird in den HTML-Dateien per <link> eingebunden 
+
+===================================================== */
+
+/* Modul mit den grundlegenden Einstellungen */
+@import url("basis.css"); 
+
+/* Modul für klassisches Layout  */
+@import url("layout.css"); 
+
+/* Modul für modernes Layout. Auskommentieren = klassisches Layout */
+@import url("layout-modern.css"); 
+
+/* Modul für die responsive Navigation */
+@import url("navi-responsiv.css"); 
+
+/* Modul zur Gestaltung der Inhalte in <main> */
+@import url("content.css"); 
+
+/* Modul für Kontaktformular und andere Interaktionen */
+@import url("forms.css"); 
+
+
+/** 
+  * Ende style.css 
+  */ 

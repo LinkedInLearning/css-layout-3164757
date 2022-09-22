@@ -1,0 +1,78 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    navi-responsiv.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Site-Navigation
+    - basiert auf display: flex
+    - Gestaltung nach dem Prinzip Mobile First: 
+      1. Gestaltung für die mobile Navigation  
+      2. 
+      3.   
+      4.  
+
+    ======================================= */
+
+
+/** 
+  * 1. Gestaltung für die mobile Navigation  
+  */     
+    
+/* Navigationsbereich gestalten */
+.site-nav { 
+  background-color: var(--grey-very-dark);
+  color: white; 
+
+  box-shadow: 0 2px 6px var(--color-shadow);
+  margin-bottom: 2rem; 
+}
+
+.site-nav .inside {
+  padding: 0; 
+}
+
+/* Navigationsliste als Flex-Container */
+.site-nav ul { 
+  display: flex;
+  flex-flow: column; 
+  list-style: none;  
+  
+  padding: 0; 
+  margin: 0; 
+}
+
+/* Die Listenelemente li benötigen in der mobilen Navigation kein CSS ;-) */
+
+/* Navigationslinks gestalten */
+.site-nav a {
+  display: block;
+  background: var(--grey-very-dark);
+  color: white; 
+  text-decoration: none; 
+  padding: 0.5rem 1rem; 
+}
+
+/* Hover und Focus gestalten */
+.site-nav a:hover, .site-nav a:focus {
+  background: var(--color-primary); 
+  color: var(--color-base-light); 
+}
+
+/* Im Moment der Aktivierung */
+.site-nav a:active {
+  background: var(--color-accent); 
+  color: var(--color-base-light); 
+}
+
+/* Aktuellen Menüpunkt und :hover/:focus unterstreichen */
+.current a { 
+  background: var(--color-primary); 
+  color: white; 
+  text-decoration: underline; 
+}
+
+/** 
+  * Ende navi-responsiv.css 
+  */ 
