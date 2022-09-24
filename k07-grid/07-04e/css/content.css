@@ -47,7 +47,7 @@
 
   @media screen and (min-width: 600px) {
 
-    .infoboxen .inside {
+    .infoboxen > .inside {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1rem;
