@@ -32,16 +32,19 @@
 */ 
 
 /* Beschriftung der Formularfelder */
+/* ALLE Beschriftungen (auch DSGVO) */
 .kontaktformular label { 
-  /* als Block = auf einer eigenen Zeile */
-  display: block; 
-
   /* Mauszeiger als "Klickhand", wie bei einem Hyperlink */
   cursor: pointer;
 }
+/* nur Beschriftungen vor den Eingabefeldern */
+.kontaktformular div > label { 
+  /* als Block = auf einer eigenen Zeile */
+  display: block; 
+}
 
 /* Abstände zwischen den Zeilen im Formular */
-.kontaktformular  div { 
+.kontaktformular  form > div { 
   margin-bottom: 1rem; 
 }
 
@@ -57,13 +60,13 @@
   /* color: var(--color-primary);  */
 
   /* Alle Eingabefelder gleich breit  */
-  width: 16rem;
+  width: 18rem;
 
   /* etwas Platz zwischen Benutzereingabe und Rahmenlinie  */
   padding: 0.5rem;
   
   /* Rahmenlinien der Eingabefelder */
-  border: 1px solid var(--grey-very-dark, #333);
+  border: 1px solid var(--grey-dark, #666);
   border-radius: 0.25rem;
 }
 
@@ -77,7 +80,7 @@
 
 /* <textarea> - Breite begrenzen und Mindesthöhe definieren */ 
 .kontaktformular textarea {
-  max-width: 25rem; 
+  max-width: 30rem; 
   min-height: 8rem;
 }
 
@@ -94,7 +97,7 @@
   background: var(--color-primary, #07b);
   color: var(--color-base-light, white); 
 
-  min-width: 16rem; 
+  min-width: 18rem; 
   padding: 1rem;
   border: none; 
   border-radius: 0.25rem;

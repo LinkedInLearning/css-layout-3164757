@@ -30,6 +30,11 @@ Farbe #666 statt gray
 
 forms.css 
 enthält das CSS aus formulare.css (Challenge/Solution, K07, Videokurs Teil 2 (2022)) 
-Eingabefelder border: dimgrey => #333 
+Fine-Tuning: 
+- label: alle = cursor:pointer; nur div > label = display: block (nicht DSGVO)
+- border für Eingabefelder: dimgrey => #333 
+- min-width für Input-Felder und Button: 16rem => 18rem 
+- max-width für textarea: 25rem => 30rem
+
 
 -- eof -- 
