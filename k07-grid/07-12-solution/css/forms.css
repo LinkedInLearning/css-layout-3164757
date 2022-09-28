@@ -8,7 +8,7 @@
     Stylesheet zur Gestaltung der Interaktion mit dem Benutzer 
     - Abschnitt mit Kontaktdaten 
     - Kontaktformular 
-    - SOLUTION: Media Query für mehrspaltiges Layout ab 600px 
+    - Media Query für mehrspaltiges Layout ab 600px 
     
     ======================================= */
     
@@ -38,15 +38,19 @@
   cursor: pointer;
 }
 /* nur Beschriftungen vor den Eingabefeldern */
-.kontaktformular div > label { 
+.kontaktformular form > label { 
   /* als Block = auf einer eigenen Zeile */
   display: block; 
 }
 
-/* Abstände zwischen den Zeilen im Formular */
-.kontaktformular  form > div { 
-  margin-bottom: 1rem; 
-}
+/* Abstände zwischen den Zeilen im Formular (Media Query = nur im mobilen Layout */
+@media screen and (max-width: 599.99px) {
+  .kontaktformular  form > input,
+  .kontaktformular  form > textarea,
+  .kontaktformular  form > div { 
+    margin-bottom: 1rem; 
+  }
+} /* Ende @media */ 
 
 /* Eingabefelder gestalten */ 
 .kontaktformular input[type="text"], 
@@ -60,7 +64,7 @@
   /* color: var(--color-primary);  */
 
   /* Alle Eingabefelder gleich breit  */
-  width: 18rem;
+  min-width: 18rem;
 
   /* etwas Platz zwischen Benutzereingabe und Rahmenlinie  */
   padding: 0.5rem;
@@ -83,6 +87,9 @@
   max-width: 30rem; 
   min-height: 8rem;
 }
+
+/* DSGVO - Schrift etwas kleiner */
+.kontaktformular .dsgvo-text { font-size: smaller; }
 
 /* Button zum Absenden der Formulardaten */
 .kontaktformular button {
@@ -115,13 +122,15 @@
   background: var(--color-accent-active, #ec3); 
 }
 
+  /** 
+    * Mehrspaltiges Layout für Kontaktformular und -daten 
+    * display: grid  
+    * 
+    */
 
 @media screen and (min-width: 600px) {
 
-  /**   
-    * Kontaktdaten und -formular nebeneinander per Grid 
-    */
-
+  /* Kontaktdaten und -formular - wie auf der Seite News */ 
   .seite-kontakt .site-content > .inside {
     display: grid;
     grid-template-columns: 2fr 1fr; 
@@ -129,50 +138,42 @@
     grid-row-gap: 1rem; 
     grid-template-areas: 
     "intro intro"
-    "kontaktformular kontaktdaten";
+    "kontaktformular kontaktdaten"; 
   }
 
-  /* Intro über beide Spalten. Reicht als Starthilfe für das Grid auto-placement */
   .seite-kontakt .content-intro { grid-area: intro; }
   
-  /* Beitragsliste und Linklisten explizit platzieren */
+  /* Kontaktdaten und -formular platzieren (Reihenfolge anders als im HTML) */
   .seite-kontakt .kontaktdaten { grid-area: kontaktdaten; margin-bottom: 0; } 
   .seite-kontakt .kontaktformular { grid-area: kontaktformular; } 
-  
 
 
-  /**   
-    * Kontaktformular - Beschriftung und Eingabefelder nebeneinander per Flexbox 
-    */
+  /* Layout für das Kontaktformular */ 
+    .kontaktformular form {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 1rem; 
 
-  /* div wird Flex-Container für Beschriftung und Eingabefelder */
-  .kontaktformular form > div { display: flex; }
+      /* Optional: Beschriftung auf der Grundlinie für Text ausrichten */
+      align-items: baseline;
+    }
 
-  .kontaktformular div > label {
-    flex: 0 1 8rem; 
-    text-align: right;
-    padding-right: 1rem; 
-  }
+    .kontaktformular form > label {
+      text-align: right;
+    }
 
-  /* Eingabefelder füllen das Formular in der Breite */
-  .kontaktformular input[type="text"], 
-  .kontaktformular input[type="email"], 
-  .kontaktformular textarea {
-    flex: 1; 
-  }
+    .kontaktformular button {
+      grid-column: 1/-1;
 
-  /* Button volle Breite */
-  .kontaktformular form {
-    display: flex;
-    flex-flow: column; 
-  }
-  .kontaktformular button { 
-    flex: 1; 
-  }
+      /* Optional: Button in der zweiten Spalte */
+      /* grid-column: 2; */
+
+    }
+
 
 } /* Ende @media */ 
 
 
 /** 
   * Ende forms.css 
-  */     
+  */

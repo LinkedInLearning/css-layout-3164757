@@ -65,25 +65,17 @@
 
         <form action="#" method="post">
 
-          <div>
-            <label for="besuchername">Ihr Name: </label>
-            <input type="text" id="besuchername" name="besuchername" required>
-          </div>
+          <label for="besuchername">Ihr Name:</label>
+          <input type="text" id="besuchername" name="besuchername" required>
 
-          <div>
-            <label for="besuchermail">Ihre E-Mail: </label>
-            <input type="email" id="besuchermail" name="besuchermail" required>
-          </div>
+          <label for="besuchermail">Ihre E-Mail:</label>
+          <input type="email" id="besuchermail" name="besuchermail" required>
 
-          <div>
-            <label for="nachricht">Ihre Nachricht: </label>
-            <textarea id="nachricht" name="nachricht" cols="30" rows="5" required></textarea>
-          </div>
+          <label for="nachricht">Ihre Nachricht:</label>
+          <textarea id="nachricht" name="nachricht" cols="30" rows="5" required></textarea>
 
-          <div>
-            <label for="dsgvo">DSGVO-Einverständnis</label>
-            <small><label><input type="checkbox" id="dsgvo" name="dsgvo" required>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden</label> (<a href="#" target="_blank" rel="noreferrer noopener">Datenschutzerklärung</a>).</small>
-          </div>
+          <label for="dsgvo">DSGVO-Einverständnis</label>
+          <div class="dsgvo-text"><label><input type="checkbox" id="dsgvo" name="dsgvo" required>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden</label> (<a href="#" target="_blank" rel="noreferrer noopener">Datenschutzerklärung</a>).</div>
 
           <button type="submit" value="Abgeschickt">Abschicken</button>
 

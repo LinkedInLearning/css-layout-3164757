@@ -38,12 +38,14 @@
   cursor: pointer;
 }
 /* nur Beschriftungen vor den Eingabefeldern */
-.kontaktformular div > label { 
+.kontaktformular form > label { 
   /* als Block = auf einer eigenen Zeile */
   display: block; 
 }
 
 /* Abstände zwischen den Zeilen im Formular */
+.kontaktformular  form > input,
+.kontaktformular  form > textarea,
 .kontaktformular  form > div { 
   margin-bottom: 1rem; 
 }
@@ -60,7 +62,7 @@
   /* color: #07b;  */
 
   /* Alle Eingabefelder gleich breit  */
-  width: 18rem;
+  min-width: 18rem;
 
   /* etwas Platz zwischen Benutzereingabe und Rahmenlinie  */
   padding: 0.5rem;
@@ -83,6 +85,9 @@
   max-width: 30rem; 
   min-height: 8rem;
 }
+
+/* DSGVO - Schrift etwas kleiner */
+.kontaktformular .dsgvo-text { font-size: smaller; }
 
 /* Button zum Absenden der Formulardaten */
 .kontaktformular button {

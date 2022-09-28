@@ -8,6 +8,10 @@ Basis sind die Übungsdateien aus dem Buch »Einstieg in HTML und CSS« (2. Aufl
 ### HTML
 durchgehende Einrückung mit 2 Leerzeichen 
 
+kontakt.html - Formular 
+- ohne div-Elemente zum Gruppieren von label und input 
+- div.dsgvo-text um label und input für den DSGVO-Text
+
 
 ### CSS 
 Namen der Stylesheets wie im Buch (nicht wie im Videokurs)
@@ -25,16 +29,18 @@ navi-inline.css
 Unterstreichung der Links für .current a, .site-nav a:hover und .site-nav:focus 
 
 content.css 
-Farbe #666 statt gray
+Farbe #666 (statt gray)
 .beitragsinfo { color: #666; } 
 
 forms.css 
-enthält das CSS aus formulare.css (Challenge/Solution, K07, Videokurs Teil 2 (2022)) 
+entspricht formulare.css (Challenge/Solution, K07, Videokurs Teil 2 (2022)) 
 Fine-Tuning: 
-- label: alle = cursor:pointer; nur div > label = display: block (nicht DSGVO)
-- border für Eingabefelder: dimgrey => #333 
-- min-width für Input-Felder und Button: 16rem => 18rem 
-- max-width für textarea: 25rem => 30rem
+- label 
+  alle label-Elemente = cursor:pointer
+  nur für div > label = display: block (also nicht für DSGVO-Text)
+- border für Eingabefelder: #333 (statt dimgrey)
+- min-width für Input-Felder und Button: 18rem (statt 16rem)
+- max-width für textarea: 30rem (statt 25rem)
 
 
 -- eof -- 
