@@ -1,0 +1,183 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    content.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Inhalte  
+    - Hyperlinks im Inhaltsbereich 
+    - Infoboxen 
+    - Feedback (Kundenstimmen)  
+    - Beiträge und Linklisten ("News") 
+
+    ======================================= */
+
+
+/** 
+  * Hyperlinks im Inhaltsbereich gestalten 
+  */
+
+/* Linkzustände für den Inhaltsbereich */
+.site-content a:link { color: var(--color-primary, #07b); } 
+.site-content a:visited { color: var(--color-primary-light, #3ad); } 
+.site-content a:hover, .site-content a:focus { color: var(--color-accent, #f63); } 
+.site-content a:active { color: var(--color-accent-active, #ec3); }  
+
+/* Externe Hyperlinks */
+/* .site-content a[href^="http"]::after { content: " (in neuem Tab oder Fenster)"; }  */
+.site-content a[href^="http"]::after { content: " \2197"; }
+/* .site-content a[target="_blank"]::after { content: " \2197"; } */
+
+
+/** 
+  * Grundlegende Gestaltung der Infoboxen 
+  */
+.infoboxen {
+    background-color: var(--grey-very-light, whitesmoke); 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+  }
+  
+  .infobox {
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+    text-align: center; 
+    background-color: var(--color-base-light, white); 
+    padding: 1rem;
+    margin: 1rem; 
+  }  
+
+  /* SVG-Icons auf der Startseite */
+  .infobox svg {
+    width: 4rem; 
+    height: auto; 
+    fill: currentColor; 
+    margin-bottom: 1rem;
+  }
+  
+
+  .infobox :last-child {
+    margin-top: auto; 
+  }
+
+
+  @media screen and (min-width: 600px) {
+
+    .infoboxen > .inside {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    
+  } /* Ende @media */
+
+  
+/** 
+  * Kundenstimmen 
+  */ 
+
+  @media screen and (min-width: 600px) {
+  
+    .kundenstimmen > .inside {
+      display: grid; 
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem; 
+    }
+
+    .kundenstimmen > .inside > h2 {
+      grid-column: 1/-1; 
+    }
+
+  } /* Ende @media */
+
+  .kundenstimme {
+    text-align: center; 
+    background-color: var(--grey-light, #eee);
+    color: var(--color-base-dark, black);
+    background-image: linear-gradient(to right, var(--grey-light, #eee), var(--grey-very-light, whitesmoke)); 
+    box-shadow: 0 1px 3px var(--color-shadow); 
+  
+    padding: 1rem;
+    border-left: 5px solid var(--color-primary, #07b);
+    margin: 0; 
+    margin-bottom: 1rem;
+  }
+
+  .kundenstimme blockquote { 
+    margin: 0; 
+  } 
+  .kundenstimme p:first-child { 
+    font-size: 1.25rem; 
+    font-weight: bold; 
+  }
+
+/** 
+  * Inhalte auf der Seite News 
+  */ 
+
+.beitragsliste h3, .linklisten h3 {
+    padding-top: 0.5rem; 
+    border-top: 1px solid var(--grey-light, #eee); 
+    margin-bottom: 0.25rem; 
+  }
+  
+  .beitragsliste article, .linklisten section { margin-bottom: 3rem; }
+  .beitragsinfo { color: var(--grey-dark, #666); }
+  
+@media screen and (min-width: 600px) {
+
+  .seite-news .site-content > .inside {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-column-gap: 3rem; 
+    grid-row-gap: 1rem; 
+    grid-template-areas: 
+    "intro intro"
+    "beitragsliste sidebar";
+  }
+
+  /* Intro über beide Spalten. Reicht als Starthilfe für das Grid auto-placement */
+  .seite-news .content-intro { grid-area: intro; }
+  
+  /* Optional: Beitragsliste und Linklisten explizit platzieren */
+  .seite-news .beitragsliste { grid-area: beitragsliste; } 
+  .seite-news .linklisten { grid-area: sidebar; } 
+
+} /* Ende @media */ 
+
+
+/**
+  * Inhalte auf der Seite Über uns 
+  */ 
+
+  .mitglieder { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem; 
+
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+  .mitglied { 
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #999; 
+  }
+  
+  .mitglied h3 { 
+    background: #07b; 
+    color: white; 
+    font-size: 1.25rem;
+    padding: 1rem; 
+    margin: -0.5rem -0.5rem 1rem -0.5rem
+  }
+  
+
+/** 
+  * Ende content.css 
+  */ 
