@@ -7,11 +7,10 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs `Webtechniken lernen
 [COURSEDESCRIPTION]
 
 ## Die Übungsdateien 
-Die Übungsdateien bestehen aus insgesamt XX Ordnern: 
+Die Übungsdateien haben die folgende Ordnerstruktur: 
 
-- Die Ordner `k01` bis `kXX` repräsentieren die X Kapitel des Kurses. In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten. 
-- Der Ordner `lagerhalle` enthält die im Kurs verwendeten Grafiken. 
-- Der Ordner `lesezeichen` enthält eine HTML-Datei mit anklickbaren Lesezeichen für die im Kurs gezeigten Webseiten. 
+- Die Ordner `k01` bis `k08` repräsentieren die 8 Kapitel des Kurses. In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten. 
+- Der Ordner `medienlager` enthält die im Kurs verwendeten Grafikdateien. 
 
 
 ## Viele Filme haben einen Anfangs- und einen Ende-Ordner 
@@ -22,7 +21,7 @@ Für viele Filme gibt es zwei Ordner:
 - einen Anfangs-Ordner, z. B. `01_04a`
 - einen Ende-Ordner, z. B. `01_04e` 
 
-Der Ordner `01_04a` enthält also die Übungsdateien wie sie am Anfang des Films benötigt werden, der Ordner `01_04e` zeigt die Übungsdateien wie sie am Ende des Films sein sollten. 
+Der Ordner `01_04a` enthält also die Übungsdateien wie sie am Anfang des Films benötigt werden, der Ordner `01_04e` zeigt die Übungsdateien am Ende des Films. 
 
 
 ## Installation 
