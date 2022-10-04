@@ -11,6 +11,8 @@
 
 @media print {
 
+    * { box-shadow: none !important; text-shadow: none !important; }
+
     html {
         background: white; 
         color: black; 
@@ -21,7 +23,12 @@
         display: none; 
     }
 
-}
+    .infobox, .kundenstimme { 
+        border: none; 
+        border-top: 1pt solid var(--color-primary-light); 
+    }
+
+} /* Ende @media */
 
 
   /** 

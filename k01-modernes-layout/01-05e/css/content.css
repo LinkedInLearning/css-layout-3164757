@@ -1,0 +1,87 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    content.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Inhalte  
+    - Hyperlinks im Inhaltsbereich 
+    - Infoboxen 
+    - Feedback (Kundenstimmen)  
+    - Beiträge und Linklisten ("News") 
+
+    ======================================= */
+
+
+/** 
+  * Hyperlinks im Inhaltsbereich gestalten 
+  */
+
+/* Linkzustände für den Inhaltsbereich */
+.site-content a:link { color: #07b; } 
+.site-content a:visited { color: #3ad; } 
+.site-content a:hover, .site-content a:focus { color: #f63; } 
+.site-content a:active { color: #ec3; }  
+
+/* Externe Hyperlinks */
+/* .site-content a[href^="http"]::after { content: " (in neuem Tab oder Fenster)"; }  */
+.site-content a[href^="http"]::after { content: " \2197"; }
+/* .site-content a[target="_blank"]::after { content: " \2197"; } */
+
+
+/** 
+  * Grundlegende Gestaltung der Infoboxen 
+  */
+.infoboxen {
+    background-color: #eee; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+  }
+  .infobox {
+    text-align: center; 
+    background-color: white; 
+    padding: 1rem;
+    margin: 1rem; 
+  }  
+
+/** 
+  * Kundenstimmen 
+  */ 
+.kundenstimme {
+    text-align: center; 
+    background-color: #eee;
+    color: black;
+    background-image: linear-gradient(to right, #eee, whitesmoke); 
+    box-shadow: 0 1px 3px rgb(51,51,51,0.3); 
+  
+    padding: 1rem;
+    border-left: 5px solid var(--hauptfarbe);
+    margin: 0; 
+    margin-bottom: 1rem;
+  }
+  .kundenstimme blockquote { 
+    margin: 0; 
+  } 
+  .kundenstimme p:first-child { 
+    font-size: 1.25rem; 
+    font-weight: bold; 
+  }
+
+/** 
+  * Inhalte auf der Seite News 
+  */ 
+.beitragsliste h3, .linklisten h3 {
+    padding-top: 0.5rem; 
+    border-top: 1px solid whitesmoke; 
+    margin-bottom: 0.25rem; 
+  }
+  
+  .beitragsliste article, .linklisten section { margin-bottom: 3rem; }
+  .beitragsinfo { color: #666; }
+  
+
+
+/** 
+  * Ende content.css 
+  */ 

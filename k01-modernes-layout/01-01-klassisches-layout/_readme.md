@@ -14,7 +14,7 @@ kontakt.html - Formular
 
 
 ### CSS 
-Namen der Stylesheets wie im Buch (nicht wie im Videokurs)
+Namen der Stylesheets wie im Buch (nicht wie im Videokurs):
 - inhalte.css => content.css 
 - formulare.css => forms.css 
 
