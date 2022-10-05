@@ -103,7 +103,10 @@ address { font-style: normal; }
     margin: -1px !important; 
   }
 
-  
+/* Klassen zum Floaten und Clearen */  
+
+
+
 /** 
   * Ende basis.css 
   */ 

@@ -104,8 +104,8 @@ address { font-style: normal; }
   }
 
   /* Klassen zum Floaten und Clearen */
-  .float-links { float: left; margin: 0 1rem 0 0; }
-  .float-rechts { float: right; margin: 0 0 0 1rem; }
+  .float-links { float: left; margin: 0 1rem 1rem 0; }
+  .float-rechts { float: right; margin: 0 1rem 0 1rem; }
 
   .float-stoppen { clear: both; }
 

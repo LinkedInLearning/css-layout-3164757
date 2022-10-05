@@ -80,7 +80,6 @@ body {
   font-size: smaller; 
   background-color: var(--grey-very-dark, #333);
   color: var(--color-base-light, white); 
-  text-align: right; 
   padding: 1rem;
 }
 

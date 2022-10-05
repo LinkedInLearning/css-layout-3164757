@@ -16,6 +16,8 @@
       body {
         font-family: sans-serif;
         background-color: #fbf9f3; 
+        /* body so hoch wie der Viewport */
+        min-height: 100vh; 
         color: #333; 
         margin: 0;         
       }      
@@ -35,13 +37,10 @@
       }
 
       /* CSS zur Zentrierung per Flexbox */
-      /* body wird Flex-Container und so hoch wie der Viewport */
-      body { 
-        /* display: flex;  */
-        /* min-height: 100vh;  */
-      }
+      /* body wird Flex-Container */
+      /* body { display: flex; } */
 
-      /* blockquote wird als Flex-Item mit margin: auto zentriert */
+      /* margin:auto zentriert ein Flex-Item horizontal UND vertikal zentriert */
       /* blockquote { margin: auto; } */
 
     </style>
