@@ -1,5 +1,5 @@
 /*  ==========================================
-    Webtechniken lernen 3: CSS-Layouts   
+    Webtechniken lernen 3: CSS-Layouts  
     Stylesheet für die Übungswebsite 
 
     navi-responsiv.css  
@@ -8,10 +8,10 @@
     Stylesheet zur Gestaltung der Site-Navigation
     - basiert auf display: flex
     - Gestaltung nach dem Prinzip Mobile First: 
-      1. Gestaltung für die mobile Navigation  
       2. Menübutton per CSS gestalten 
       3. Menübutton per CSS ausblenden 
       4. Navigationsliste mit dem Menübutton einblenden
+      5. Eine horizontale Navigation für breitere Viewports 
 
     ======================================= */
 
@@ -66,7 +66,7 @@
   color: var(--color-base-light); 
 }
 
-/* Aktuellen Menüpunkt und :hover/:focus unterstreichen */
+/* Aktuellen Menüpunkt hervorheben */
 .current a { 
   background: var(--color-primary); 
   color: white; 
@@ -131,6 +131,12 @@
   content: url("../bilder/menuclose.svg");
 }
 
+
+/**
+  * 5. Eine horizontale Navigation für breitere Viewports 
+  */
+
+  
 
 
 /** 

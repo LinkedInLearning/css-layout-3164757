@@ -1,5 +1,5 @@
 /*  ==========================================
-    Webtechniken lernen 3: CSS-Layouts   
+    Webtechniken lernen 3: CSS-Layouts  
     Stylesheet für die Übungswebsite 
 
     navi-responsiv.css  
@@ -67,7 +67,7 @@
   color: var(--color-base-light); 
 }
 
-/* Aktuellen Menüpunkt und :hover/:focus unterstreichen */
+/* Aktuellen Menüpunkt hervorheben */
 .current a { 
   background: var(--color-primary); 
   color: white; 

@@ -1,6 +1,6 @@
 # Projektdateien für 3164757 Webtechniken lernen 3: CSS-Layout (2023) 
 
-Basis sind die Übungsdateien aus dem Buch »Einstieg in HTML und CSS« (2. Auflage, 2022)
+Basis sind die Übungsdateien aus dem Buch »Webtechniken lernen 3: CSS-Layouts« (2. Auflage, 2022)
 
 
 ## Änderungen in den Übungsdateien für 01-01-klassisches Layout 

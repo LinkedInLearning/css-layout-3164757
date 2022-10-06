@@ -1,5 +1,5 @@
 /*  ==========================================
-    Webtechniken lernen 3: CSS-Layouts   
+    Webtechniken lernen 3: CSS-Layouts  
     Stylesheet für die Übungswebsite 
 
     layout-modern.css  
@@ -34,8 +34,14 @@ body {
 }
 
 /* Fine-Tuning der Abstände für die Infoboxen - zusätzliche Klasse erhöht die Spezifität */ 
-.site-content .infoboxen { padding: 1rem 0; } 
-.site-content .infobox { margin: 1rem 0; }
+.site-content .infoboxen { 
+  padding-right: 0; 
+  padding-left: 0; 
+} 
+.site-content .infobox { 
+  margin-right: 0; 
+  margin-left: 0; 
+}
 
 /* Layoutbereiche - horizontale Innenabstände entfernen */
 .site-header, 
