@@ -1,5 +1,5 @@
 /*  ==========================================
-    Webtechniken lernen 3: CSS-Layouts   
+    Webtechniken lernen 3: CSS-Layouts  
     Stylesheet für die Übungswebsite 
 
     content.css  
@@ -73,7 +73,7 @@
   
     .kundenstimmen > .inside {
       display: grid; 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1rem; 
     }
 
@@ -107,16 +107,6 @@
 /** 
   * Inhalte auf der Seite News 
   */ 
-
-.beitragsliste h3, .linklisten h3 {
-    padding-top: 0.5rem; 
-    border-top: 1px solid var(--grey-light, #eee); 
-    margin-bottom: 0.25rem; 
-  }
-  
-  .beitragsliste article, .linklisten section { margin-bottom: 3rem; }
-  .beitragsinfo { color: var(--grey-dark, #666); }
-  
 @media screen and (min-width: 600px) {
 
   .seite-news .site-content > .inside {
@@ -132,12 +122,21 @@
   /* Intro über beide Spalten. Reicht als Starthilfe für das Grid auto-placement */
   .seite-news .content-intro { grid-area: intro; }
   
-  /* Optional: Beitragsliste und Linklisten explizit platzieren */
+  /* Optional: Beitragsliste und Linklisten ebenfalls explizit platzieren */
   .seite-news .beitragsliste { grid-area: beitragsliste; } 
   .seite-news .linklisten { grid-area: sidebar; } 
 
 } /* Ende @media */ 
 
+.beitragsliste h3, .linklisten h3 {
+    padding-top: 0.5rem; 
+    border-top: 1px solid var(--grey-light, #eee); 
+    margin-bottom: 0.25rem; 
+  }
+  
+.beitragsliste article, .linklisten section { margin-bottom: 3rem; }
+.beitragsinfo { color: var(--grey-dark, #666); }
+  
 
 /** 
   * Ende content.css 

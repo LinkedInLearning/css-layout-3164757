@@ -1,5 +1,5 @@
 /*  ==========================================
-    Webtechniken lernen 3: CSS-Layouts   
+    Webtechniken lernen 3: CSS-Layouts  
     Stylesheet für die Übungswebsite 
 
     content.css  
@@ -33,11 +33,21 @@
 /** 
   * Grundlegende Gestaltung der Infoboxen 
   */
-.infoboxen {
+  .infoboxen {
     background-color: var(--grey-very-light, whitesmoke); 
     padding: 1rem; 
     margin-bottom: 1rem; 
   }
+
+  @media screen and (min-width: 600px) {
+
+    .infoboxen > .inside {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    
+  } /* Ende @media */
   
   .infobox {
     display: flex;
@@ -53,17 +63,6 @@
     margin-top: auto; 
   }
 
-
-  @media screen and (min-width: 600px) {
-
-    .infoboxen > .inside {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1rem;
-    }
-    
-  } /* Ende @media */
-
   
 /** 
   * Kundenstimmen 
@@ -73,7 +72,7 @@
   
     .kundenstimmen > .inside {
       display: grid; 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1rem; 
     }
 

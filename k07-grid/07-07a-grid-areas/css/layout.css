@@ -1,5 +1,5 @@
 /*  ==========================================
-    Webtechniken lernen 3: CSS-Layouts   
+    Webtechniken lernen 3: CSS-Layouts  
     Stylesheet für die Übungswebsite 
 
     layout.css  
@@ -40,7 +40,7 @@ body {
 
 }
 
-/* Klassisches Layout: Für moderne Browser mehr Platz für mehrspaltige Layouts */
+/* Optional: Für moderne Browser mehr Platz auch beim klassischen Layout */
 @supports (display: grid) {
   
   body {
