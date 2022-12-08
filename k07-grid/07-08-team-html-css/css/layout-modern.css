@@ -10,7 +10,7 @@
     - body reicht von ganz links bis ganz rechts 
     - die Begrenzung der Breite erfolgt durch div.inside 
 
-    Die Gestaltung der Site-Navigation steht in eigenem Stylesheet. 
+    Die Gestaltung der Site-Navigation steht in einem eigenen Stylesheet. 
 
     ======================================= */
 
@@ -41,7 +41,7 @@ body {
 } /* Ende @supports */ 
 
 
-/* Fine-Tuning der Abstände für die Infoboxen - zusätzliche Klasse erhöht die Spezifität */ 
+/* Die in content.css definierten Abstände korrigieren - zusätzliche Klasse erhöht die Spezifität */ 
 .site-content .infoboxen { 
   padding-right: 0; 
   padding-left: 0; 

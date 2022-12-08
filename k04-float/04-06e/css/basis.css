@@ -115,7 +115,7 @@ address { font-style: normal; }
     text-align: center;
   }
 
-  /* Floats umschliessen */ 
+  /* Float umschliessen */ 
   .float-umschliessen { overflow: hidden; }
 
   @supports (display:flow-root) {
@@ -125,7 +125,7 @@ address { font-style: normal; }
       overflow: initial;       
     }
   
-  }
+  } /* Ende @supports */
   
   
 /** 
