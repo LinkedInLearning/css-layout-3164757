@@ -1,4 +1,4 @@
-# Webtechniken lernen 3: Responsive CSS-Layout mit Media Queries, Flexbox und Grid
+# Webtechniken lernen 3: Responsive CSS-Layouts mit Media Queries, Flexbox und Grid
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
