@@ -5,8 +5,8 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den ge
 ![course-name-alt-text][lil-thumbnail-url]
 
 
-## Die Übungsdateien     
-Die Übungsdateien bestehen aus insgesamt neun Ordnern:     
+## Die Projektdateien     
+Die Projektdateien bestehen aus insgesamt neun Ordnern:     
 
 - Die Ordner `k01` bis `k08` repräsentieren die Kapitel des Kurses. In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten.     
 - Der Ordner `medienlager` enthält die im Kurs verwendeten Grafiken.     
