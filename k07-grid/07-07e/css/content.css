@@ -112,14 +112,14 @@
   .seite-news .site-content > .inside {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    grid-column-gap: 3rem; 
-    grid-row-gap: 1rem; 
+    column-gap: 3rem; 
+    row-gap: 1rem; 
     grid-template-areas: 
     "intro intro"
     "beitragsliste sidebar";
   }
 
-  /* Intro über beide Spalten. Reicht als Starthilfe für das Grid auto-placement */
+  /* Explizite Platzierung. Intro über beide Spalten. Reicht als Starthilfe für das Grid auto-placement */
   .seite-news .content-intro { grid-area: intro; }
   
   /* Optional: Beitragsliste und Linklisten ebenfalls explizit platzieren */

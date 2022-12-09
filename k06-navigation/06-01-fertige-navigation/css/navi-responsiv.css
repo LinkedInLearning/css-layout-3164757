@@ -80,7 +80,7 @@
   * 2. Menübutton per CSS gestalten 
   */     
 
-/* Keine JavaScript? Menübutton ausblenden */
+/* Kein JavaScript? Menübutton ausblenden */
 .no-js .menubutton { display: none; }
 
 /* Menübutton gestalten */
@@ -128,7 +128,7 @@
 }
 
 /* Tausche Hamburger gegen X */
-.js .showmenu.menubutton::before {
+.js .menubutton.showmenu::before {
   content: url("../bilder/menuclose.svg");
 }
 

@@ -134,8 +134,8 @@
   .seite-kontakt .site-content > .inside {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    grid-column-gap: 3rem; 
-    grid-row-gap: 1rem; 
+    column-gap: 3rem; 
+    row-gap: 1rem; 
     grid-template-areas: 
     "intro intro"
     "kontaktformular kontaktdaten"; 
@@ -154,7 +154,7 @@
       grid-template-columns: 7rem 1fr;
       gap: 1rem; 
       /* Optional: Beschriftung auf der Grundlinie für Text ausrichten */
-      /* align-items: baseline; */
+      align-items: baseline;
     }
 
     .kontaktformular form > label {

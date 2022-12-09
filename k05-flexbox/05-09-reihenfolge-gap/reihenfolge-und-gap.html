@@ -3,7 +3,7 @@
  
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Flexbox - Navigation – Videokurs Webtechniken lernen 3: CSS-Layout</title>
     <meta name="description" content="In diesem Videokurs lernen Sie das Erstellen und Gestalten von Webseiten mit HTML und CSS.">
@@ -24,7 +24,12 @@
         margin: 0; 
 
         display: flex; 
-        gap: 1rem; 
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* gap: 1rem;  */
       } 
       li { 
         list-style: none;
@@ -36,6 +41,9 @@
       }
       li:nth-child(1) { 
         background: #f63;
+        /* order: 0;  */
+        /* order: 1;  */
+
         /* order: 2;  */
       }
       li:nth-child(2) { 
@@ -48,6 +56,8 @@
       }            
       li:nth-child(4) { 
         background: #ec3;
+        /* order: -1;  */
+        
         /* order: 1;  */
       } 
 

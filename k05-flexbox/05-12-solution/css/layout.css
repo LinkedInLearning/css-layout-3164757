@@ -80,6 +80,7 @@ body {
   font-size: smaller; 
   background-color: var(--grey-very-dark, #333);
   color: var(--color-base-light, white); 
+  /* text-align: right; */
   padding: 1rem;
 }
 
@@ -93,6 +94,7 @@ body {
 }
 
 .footer-nav li {
+  /* display: inline; */
   margin-right: 0.5rem;
 }
 
@@ -102,8 +104,8 @@ body {
 }
 
 .footer-nav li:last-child {
-  margin-right: 0; 
   margin-left: auto; 
+  margin-right: 0; 
 }
 
 .site-footer a {

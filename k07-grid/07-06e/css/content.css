@@ -76,10 +76,12 @@
       grid-gap: 1rem; 
     }
 
+    /* Im Film lautet der Selektor .kundenstimmen h2:first-child. Geht auch ;-) */
     .kundenstimmen > .inside > h2 {
+      /* von Linie 1 bis Linie 3 */
       /* grid-column: 1/3; */
 
-      /* Immer über die gesamte Breite  */
+      /* Immer über die gesamte Breite mit -1  */
       grid-column: 1/-1; 
     }
 

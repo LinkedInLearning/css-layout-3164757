@@ -102,7 +102,7 @@
     grid-column: span 2; 
     grid-row: span 2; 
 
-    /* Vertikal zentrieren */
+    /* Text vertikal zentrieren */
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -124,8 +124,8 @@
     .seite-news .site-content > .inside {
       display: grid;
       grid-template-columns: 2fr 1fr; 
-      grid-column-gap: 3rem; 
-      grid-row-gap: 1rem; 
+      column-gap: 3rem; 
+      row-gap: 1rem; 
       grid-template-areas: 
       "intro intro"
       "beitragsliste sidebar";
