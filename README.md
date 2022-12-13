@@ -1,9 +1,10 @@
 # Webtechniken lernen 3: Responsive CSS-Layouts mit Media Queries, Flexbox und Grid
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs Webtechniken lernen 3: Responsive CSS-Layouts mit Media Queries, Flexbox und Grid`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url]
+![image](https://user-images.githubusercontent.com/61017085/207387894-0c4d8292-a39b-4444-8460-f960653bf043.png)
 
+In seiner Kursreihe vermittelt Ihnen Peter Müller das gesamte Grundwissen, um moderne Webseiten erstellen und gestalten zu können - Sie müssen dazu über keinerlei Vorkenntnisse verfügen. Lernen Sie in dritten Teil, wie sich per CSS responsive Layouts erstellen lassen. Traditionelle Layout-Techniken wie position und float werden dabei ebenso vorgestellt wie Media Queries und die Layout-Module Flexbox und CSS Grid. Mit Hilfe von Challenge/Solution-Einheiten am Ende der einzelnen  Kapitel können Sie das Erlernte sofort testen und Ihre Lösung auch gleich mit der angebotenen Solution vergleichen.
 
 ## Die Projektdateien     
 Die Projektdateien bestehen aus insgesamt neun Ordnern:     
@@ -36,10 +37,9 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 
 ## Autor    
 **Peter Müller**    
-[Website des Autoren](https://pmueller.de/)     
+[Website des Autors](https://pmueller.de/)     
 [Website zum Kurs](https://html-und-css.de/videokurs)     
 
-Sehen Sie sich andere Kurse des Autors auf <<<<Link aktualisieren>>>> [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors?u=104) an.
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/peter_mueller) an.
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://
+[lil-course-url]: https://www.linkedin.com/learning/webtechniken-lernen-3-responsive-css-layouts-mit-media-queries-flexbox-und-grid
