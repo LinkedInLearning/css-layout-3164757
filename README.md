@@ -40,6 +40,6 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 [Website des Autors](https://pmueller.de/)     
 [Website zum Kurs](https://html-und-css.de/videokurs)     
 
-Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/peter_mueller) an.
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/peter-m-muller) an.
 
 [lil-course-url]: https://www.linkedin.com/learning/webtechniken-lernen-3-responsive-css-layouts-mit-media-queries-flexbox-und-grid
