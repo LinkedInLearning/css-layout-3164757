@@ -2,7 +2,7 @@
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs Webtechniken lernen 3: Responsive CSS-Layouts mit Media Queries, Flexbox und Grid`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-![image](https://user-images.githubusercontent.com/61017085/207387894-0c4d8292-a39b-4444-8460-f960653bf043.png)
+![COURSENAME][lil-thumbnail-url] 
 
 In seiner Kursreihe vermittelt Ihnen Peter Müller das gesamte Grundwissen, um moderne Webseiten erstellen und gestalten zu können - Sie müssen dazu über keinerlei Vorkenntnisse verfügen. Lernen Sie in dritten Teil, wie sich per CSS responsive Layouts erstellen lassen. Traditionelle Layout-Techniken wie position und float werden dabei ebenso vorgestellt wie Media Queries und die Layout-Module Flexbox und CSS Grid. Mit Hilfe von Challenge/Solution-Einheiten am Ende der einzelnen  Kapitel können Sie das Erlernte sofort testen und Ihre Lösung auch gleich mit der angebotenen Solution vergleichen.
 
@@ -43,3 +43,4 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/peter-m-muller) an.
 
 [lil-course-url]: https://www.linkedin.com/learning/webtechniken-lernen-3-responsive-css-layouts-mit-media-queries-flexbox-und-grid
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C4E0DAQFzJhW7qD9tPA/learning-public-crop_675_1200/0/1670588346443?e=2147483647&v=beta&t=kUi1a3suW9z3Te9aBm-_cBTSd2BMaE3NDn3LrY-nHZ4
